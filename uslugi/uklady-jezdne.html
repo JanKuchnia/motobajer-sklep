@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Serwis Hamulców, Zawieszenia i Układu Kierowniczego | MOTOBAJER Myślenice</title>
+  <meta name="description" content="Naprawa hamulców, zawieszenia i układu kierowniczego w Myślenicach. Wymiana klocków, tarcz, amortyzatorów i drążków. MOTOBAJER — bezpieczeństwo na drodze.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.motobajer.pl/uslugi/uklady-jezdne.html">
+  <meta property="og:title" content="Serwis Hamulców, Zawieszenia i Układu Kierowniczego | MOTOBAJER Myślenice">
+  <meta property="og:description" content="Naprawa hamulców, zawieszenia i układu kierowniczego w Myślenicach. Wymiana klocków, tarcz, amortyzatorów i drążków. MOTOBAJER — bezpieczeństwo na drodze.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1486006920555-c77dce18193b?q=80&w=600&auto=format&fit=crop">
+
+  <!-- CSS Stylesheets -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="../css/styles.css">
+  
+  <!-- Tailwind Configuration -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#0b0f19',
+              slate: '#1e293b',
+              primary: '#0284c7',
+              primaryHover: '#0369a1',
+              accent: '#eab308',
+            }
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-body antialiased flex flex-col min-h-screen">
+
+  <!-- Header Navigation -->
+  <header class="sticky top-0 z-50 transition-all duration-300 glass-panel-light shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- Logo Branding -->
+        <a href="../index.html" class="flex items-center space-x-3 group">
+          <div class="w-10 h-10 bg-brand-primary flex items-center justify-center rounded-lg text-white font-heading font-extrabold text-xl tracking-wider transition-transform duration-300 group-hover:scale-105 shadow-md shadow-sky-500/20">
+            MB
+          </div>
+          <div class="flex flex-col">
+            <span class="font-heading font-extrabold text-xl text-slate-900 tracking-tight leading-none group-hover:text-brand-primary transition-colors">MOTOBAJER</span>
+            <span class="text-xs font-semibold text-amber-500 tracking-widest uppercase leading-none mt-1">EuroWarsztat</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-8 items-center">
+          <a href="../index.html" class="nav-link font-medium text-slate-600 hover:text-brand-primary transition-colors py-2">Start</a>
+          
+          <!-- Dropdown Services -->
+          <div class="relative group py-2">
+            <button class="nav-link flex items-center space-x-1 font-medium text-slate-600 hover:text-brand-primary transition-colors focus:outline-none">
+              <span>Usługi</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="absolute left-1/2 -translate-x-1/2 top-full hidden group-hover:block w-72 bg-white rounded-xl shadow-xl border border-slate-100 p-2 py-3 mt-1 animate-fade-in">
+              <a href="mechanika-ogolna.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 transition-colors">
+                <span class="text-brand-primary font-bold text-lg">⚙️</span>
+                <div>
+                  <div class="font-semibold text-slate-800 text-sm">Mechanika Ogólna</div>
+                  <div class="text-xs text-slate-500">Naprawy silnika, rozrządy, sprzęgła</div>
+                </div>
+              </a>
+              <a href="diagnostyka.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 transition-colors">
+                <span class="text-brand-primary font-bold text-lg">💻</span>
+                <div>
+                  <div class="font-semibold text-slate-800 text-sm">Diagnostyka Komputerowa</div>
+                  <div class="text-xs text-slate-500">Odczyt błędów OBD, adaptacje</div>
+                </div>
+              </a>
+              <a href="uklady-jezdne.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 transition-colors">
+                <span class="text-brand-primary font-bold text-lg">🛑</span>
+                <div>
+                  <div class="font-semibold text-slate-800 text-sm">Układy Jezdne & Bezpieczeństwo</div>
+                  <div class="text-xs text-slate-500">Hamulce, zawieszenie, amortyzatory</div>
+                </div>
+              </a>
+              <a href="klimatyzacja.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 transition-colors">
+                <span class="text-brand-primary font-bold text-lg">❄️</span>
+                <div>
+                  <div class="font-semibold text-slate-800 text-sm">Serwis Klimatyzacji</div>
+                  <div class="text-xs text-slate-500">Napełnianie, odgrzybianie, ozonowanie</div>
+                </div>
+              </a>
+              <a href="elektryka.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 transition-colors">
+                <span class="text-brand-primary font-bold text-lg">⚡</span>
+                <div>
+                  <div class="font-semibold text-slate-800 text-sm">Elektryka Pojazdowa</div>
+                  <div class="text-xs text-slate-500">Alternatory, rozruszniki, kable</div>
+                </div>
+              </a>
+              <a href="wulkanizacja.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 transition-colors">
+                <span class="text-brand-primary font-bold text-lg">🔧</span>
+                <div>
+                  <div class="font-semibold text-slate-800 text-sm">Wulkanizacja & Opony</div>
+                  <div class="text-xs text-slate-500">Wymiana opon, wyważanie kół</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <a href="../sklep.html" class="nav-link font-medium text-slate-600 hover:text-brand-primary transition-colors py-2">Sklep Części</a>
+          <a href="../kontakt.html" class="nav-link font-medium text-slate-600 hover:text-brand-primary transition-colors py-2">Kontakt</a>
+        </nav>
+
+        <!-- Right Header Items: Contact CTA & Cart Icon -->
+        <div class="flex items-center space-x-4">
+          <!-- Shopping Cart Icon Badge -->
+          <a href="../sklep.html" class="relative p-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 hover:text-brand-primary rounded-full transition-all focus:outline-none flex items-center justify-center">
+            <svg class="w-5.5 h-5.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+            </svg>
+            <span class="cart-badge absolute -top-1.5 -right-1.5 w-5 h-5 bg-red-600 text-white font-bold text-[10px] rounded-full hidden items-center justify-center cart-badge-pulse">0</span>
+          </a>
+
+          <!-- Quick Call CTA -->
+          <a href="tel:609845865" class="hidden sm:inline-flex items-center space-x-2 px-5 py-2.5 bg-brand-primary hover:bg-brand-primaryHover text-white font-semibold rounded-lg text-sm transition-all shadow-md shadow-sky-500/10">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+            <span>Zadzwoń: 609 845 865</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-slate-900 focus:outline-none">
+            <svg class="w-6.5 h-6.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 py-4 px-4 space-y-2 shadow-lg">
+      <a href="../index.html" class="block py-2.5 px-3 rounded-lg text-slate-700 hover:bg-slate-50 font-medium">Start</a>
+      <div class="border-b border-slate-100 my-1"></div>
+      <div class="px-3 py-1.5 text-xs font-semibold text-slate-400 uppercase tracking-wider">Usługi Warsztatu</div>
+      <a href="mechanika-ogolna.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm">⚙️ Mechanika Ogólna</a>
+      <a href="diagnostyka.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm">💻 Diagnostyka Komputerowa</a>
+      <a href="uklady-jezdne.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm font-semibold text-blue-600">🛑 Układy Jezdne & Bezpieczeństwo</a>
+      <a href="klimatyzacja.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm">❄️ Serwis Klimatyzacji</a>
+      <a href="elektryka.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm">⚡ Elektryka Pojazdowa</a>
+      <a href="wulkanizacja.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm">🔧 Wulkanizacja</a>
+      <div class="border-b border-slate-100 my-1"></div>
+      <a href="../sklep.html" class="block py-2.5 px-3 rounded-lg text-slate-700 hover:bg-slate-50 font-medium">Sklep Części</a>
+      <a href="../kontakt.html" class="block py-2.5 px-3 rounded-lg text-slate-700 hover:bg-slate-50 font-medium">Kontakt</a>
+      <a href="tel:609845865" class="flex items-center justify-center space-x-2 py-3 bg-brand-primary text-white font-semibold rounded-lg mt-4 shadow-md">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+        <span>Zadzwoń: 609 845 865</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero subpage -->
+  <section class="bg-slate-900 text-white py-16 relative overflow-hidden">
+    <div class="absolute inset-0 bg-cover bg-center opacity-10" style="background-image: url('https://images.unsplash.com/photo-1486006920555-c77dce18193b?q=80&w=1200&auto=format&fit=crop');"></div>
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center z-10">
+      <span class="text-sky-400 font-bold uppercase text-xs tracking-wider">Pewność & Kontrola</span>
+      <h1 class="font-heading font-extrabold text-3xl sm:text-4xl lg:text-5xl tracking-tight mt-3 mb-6">
+        Układy Jezdne & Bezpieczeństwo
+      </h1>
+      <div class="w-12 h-1 bg-brand-primary mx-auto mb-6 rounded-full"></div>
+      <p class="text-slate-300 text-lg leading-relaxed max-w-2xl mx-auto">
+        Hamulce, zawieszenie, układ kierowniczy — to elementy, od których bezpośrednio zależy stabilność Twojego pojazdu. Serwisujemy je z najwyższą starannością, korzystając wyłącznie ze sprawdzonych podzespołów.
+      </p>
+    </div>
+  </section>
+
+  <!-- Service Details Content -->
+  <section class="py-20 bg-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+        
+        <!-- Left details list -->
+        <div class="lg:col-span-2 space-y-12">
+          
+          <div>
+            <h2 class="font-heading font-bold text-2xl text-slate-900 mb-6">Zakres napraw i diagnostyki podwozia</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              
+              <div class="p-6 bg-slate-50 border border-slate-200/50 rounded-xl">
+                <div class="text-brand-primary font-bold text-lg mb-3">🛑 Układ hamulcowy</div>
+                <p class="text-slate-500 text-sm leading-relaxed">Wymiana klocków i tarcz hamulcowych, regeneracja lub wymiana zacisków, przewodów elastycznych oraz okresowa wymiana płynu hamulcowego i odpowietrzanie układu.</p>
+              </div>
+
+              <div class="p-6 bg-slate-50 border border-slate-200/50 rounded-xl">
+                <div class="text-brand-primary font-bold text-lg mb-3">⚙️ Zawieszenie</div>
+                <p class="text-slate-500 text-sm leading-relaxed">Wymiana amortyzatorów, sprężyn śrubowych, wahaczy poprzecznych i podłużnych, łączników stabilizatora, a także wyeksploatowanych tulei gumowo-metalowych.</p>
+              </div>
+
+              <div class="p-6 bg-slate-50 border border-slate-200/50 rounded-xl">
+                <div class="text-brand-primary font-bold text-lg mb-3">🔄 Układ kierowniczy</div>
+                <p class="text-slate-500 text-sm leading-relaxed">Wymiana końcówek drążków kierowniczych, osłon gumowych, przekładni kierowniczych oraz diagnostyka i naprawa pomp wspomagania układu.</p>
+              </div>
+
+              <div class="p-6 bg-slate-50 border border-slate-200/50 rounded-xl">
+                <div class="text-brand-primary font-bold text-lg mb-3">🔍 Diagnostyka podwozia</div>
+                <p class="text-slate-500 text-sm leading-relaxed">Przed rozpoczęciem napraw dokładnie kontrolujemy stan luzów, zużycia i ewentualnych wycieków z amortyzatorów. Dajemy jasną rekomendację co i kiedy należy wymienić.</p>
+              </div>
+
+            </div>
+          </div>
+
+          <div class="border-t border-slate-100 pt-8">
+            <h3 class="font-heading font-bold text-xl text-slate-900 mb-4">Wpływ zawieszenia na opony</h3>
+            <p class="text-slate-500 leading-relaxed text-sm">
+              Niesprawne elementy układu kierowniczego lub zużyte tuleje wahaczy powodują nieprawidłowe ustawienie kół pod obciążeniem. Prowadzi to do tzw. „ząbkowania" lub nierównomiernego ścierania bieżnika opon, co drastycznie skraca ich żywotność i pogarsza przyczepność na mokrej nawierzchni. Dbając o zawieszenie, chronisz również swoje opony.
+            </p>
+          </div>
+
+        </div>
+
+        <!-- Sidebar highlights -->
+        <div class="lg:col-span-1 space-y-8">
+          
+          <div class="bg-slate-900 text-white rounded-2xl p-8 border border-slate-800">
+            <h3 class="font-heading font-bold text-xl mb-6">Sygnały ostrzegawcze</h3>
+            <ul class="space-y-4">
+              <li class="flex items-start space-x-3 text-sm">
+                <span class="text-brand-accent text-base">⚠️</span>
+                <span class="text-slate-300"><strong class="text-white font-semibold">Piski i zgrzyty</strong> — dźwięki metaliczne podczas hamowania oznaczają całkowite zużycie okładzin.</span>
+              </li>
+              <li class="flex items-start space-x-3 text-sm">
+                <span class="text-brand-accent text-base">⚠️</span>
+                <span class="text-slate-300"><strong class="text-white font-semibold">Stuki pod autem</strong> — głuche hałasy na nierównościach świadczą o luzach w zawieszeniu.</span>
+              </li>
+              <li class="flex items-start space-x-3 text-sm">
+                <span class="text-brand-accent text-base">⚠️</span>
+                <span class="text-slate-300"><strong class="text-white font-semibold">Sciąganie pojazdu</strong> — gdy auto samoistnie ucieka w lewo lub w prawo na prostej drodze.</span>
+              </li>
+              <li class="flex items-start space-x-3 text-sm">
+                <span class="text-brand-accent text-base">⚠️</span>
+                <span class="text-slate-300"><strong class="text-white font-semibold">Luz na kierownicy</strong> — brak precyzji prowadzenia lub drgania podczas jazdy szosowej.</span>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Phone CTA Box -->
+          <div class="bg-slate-50 border border-slate-200 rounded-2xl p-8 text-center">
+            <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">Podejrzewasz luz w zawieszeniu?</h3>
+            <p class="text-xs text-slate-500 mb-6 leading-relaxed">
+              Nie ignoruj niepokojących stuków. Bezpieczeństwo Twoje i pasażerów jest najważniejsze. Zadzwń i zarezerwuj termin kontroli podwozia.
+            </p>
+            <a href="tel:609845865" class="inline-flex justify-center items-center w-full py-3 bg-brand-primary hover:bg-brand-primaryHover text-white font-bold rounded-lg text-sm shadow-md transition-all">
+              Zadzwoń: 609 845 865
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Box -->
+  <section class="py-20 bg-slate-50 border-t border-slate-100 text-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-heading font-extrabold text-3xl text-slate-900 mb-6">
+        Bezpieczeństwo nie może czekać.
+      </h2>
+      <p class="text-slate-500 text-base mb-8 max-w-md mx-auto">
+        Regularna weryfikacja hamulców i amortyzatorów zapobiega nieprzewidywalnym zachowaniom na drodze. Odwiedź nasz warsztat przy ul. Drogowców 7.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+        <a href="tel:609845865" class="w-full sm:w-auto px-8 py-3.5 bg-brand-primary hover:bg-brand-primaryHover text-white font-bold rounded-lg transition-all shadow-md shadow-sky-500/10">
+          Zadzwoń: 609 845 865
+        </a>
+        <a href="../kontakt.html" class="w-full sm:w-auto px-8 py-3.5 bg-white hover:bg-slate-50 text-slate-700 font-bold rounded-lg border border-slate-200 transition-all">
+          Lokalizacja na mapie
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-auto bg-slate-900 text-slate-400 border-t border-slate-800 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <div class="md:col-span-2">
+          <div class="flex items-center space-x-3 mb-4">
+            <div class="w-8 h-8 bg-brand-primary flex items-center justify-center rounded text-white font-heading font-extrabold text-sm tracking-wider">
+              MB
+            </div>
+            <span class="font-heading font-extrabold text-lg text-white tracking-tight">MOTOBAJER</span>
+          </div>
+          <p class="text-sm text-slate-500 leading-relaxed max-w-sm mb-4">
+            Działamy na rynku od 2008 roku, dbając o bezpieczeństwo i sprawność pojazdów naszych klientów w Myślenicach i okolicach.
+          </p>
+          <p class="text-xs text-slate-600">
+            NIP: 6811341146 | REGON: 120696804
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-heading font-bold text-white text-sm tracking-wider uppercase mb-4">Nawigacja</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="../index.html" class="hover:text-white transition-colors">Start</a></li>
+            <li><a href="../sklep.html" class="hover:text-white transition-colors">Sklep online</a></li>
+            <li><a href="../kontakt.html" class="hover:text-white transition-colors">Contact</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-heading font-bold text-white text-sm tracking-wider uppercase mb-4">Usługi</h4>
+          <ul class="space-y-2.5 text-sm text-slate-500">
+            <li><a href="mechanika-ogolna.html" class="hover:text-white transition-colors">Mechanika Ogólna</a></li>
+            <li><a href="diagnostyka.html" class="hover:text-white transition-colors">Diagnostyka</a></li>
+            <li><a href="uklady-jezdne.html" class="hover:text-white transition-colors">Hamulce & Układy Jezdne</a></li>
+            <li><a href="klimatyzacja.html" class="hover:text-white transition-colors">Klimatyzacja</a></li>
+            <li><a href="elektryka.html" class="hover:text-white transition-colors">Elektryka</a></li>
+            <li><a href="wulkanizacja.html" class="hover:text-white transition-colors">Wulkanizacja</a></li>
+          </ul>
+        </div>
+
+      </div>
+      
+      <div class="border-t border-slate-800/80 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-600">
+        <p>&copy; 2026 MOTOBAJER Stanisław Bajer. Wszelkie prawa zastrzeżone.</p>
+        <p class="mt-4 md:mt-0">Autoryzowany punkt sieci EuroWarsztat</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="../js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MOTOBAJER Myślenice — Warsztat Samochodowy & Auto-Części | EuroWarsztat</title>
+  <meta name="description" content="Profesjonalny serwis samochodowy w Myślenicach. Mechanika, diagnostyka komputerowa, klimatyzacja, wulkanizacja i sklep z częściami. Sieć EuroWarsztat. Zadzwoń: 609 845 865.">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.motobajer.pl/">
+  <meta property="og:title" content="MOTOBAJER Myślenice — Warsztat Samochodowy & Auto-Części | EuroWarsztat">
+  <meta property="og:description" content="Profesjonalny serwis samochodowy w Myślenicach. Mechanika, diagnostyka komputerowa, klimatyzacja, wulkanizacja i sklep z częściami. Sieć EuroWarsztat. Zadzwoń: 609 845 865.">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1486006920555-c77dce18193b?q=80&w=600&auto=format&fit=crop">
+
+  <!-- CSS Stylesheets -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/styles.css">
+  
+  <!-- Tailwind Configuration to map our custom design system tokens -->
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              dark: '#0b0f19',
+              slate: '#1e293b',
+              primary: '#0284c7',
+              primaryHover: '#0369a1',
+              accent: '#eab308', // Gold/Yellow rating/highlight color
+            }
+          },
+          fontFamily: {
+            heading: ['Outfit', 'sans-serif'],
+            body: ['Inter', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-body antialiased flex flex-col min-h-screen">
+
+  <!-- Header Navigation -->
+  <header class="sticky top-0 z-50 transition-all duration-300 glass-panel-light shadow-sm">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-20">
+        
+        <!-- Logo Branding -->
+        <a href="index.html" class="flex items-center space-x-3 group">
+          <div class="w-10 h-10 bg-brand-primary flex items-center justify-center rounded-lg text-white font-heading font-extrabold text-xl tracking-wider transition-transform duration-300 group-hover:scale-105 shadow-md shadow-sky-500/20">
+            MB
+          </div>
+          <div class="flex flex-col">
+            <span class="font-heading font-extrabold text-xl text-slate-900 tracking-tight leading-none group-hover:text-brand-primary transition-colors">MOTOBAJER</span>
+            <span class="text-xs font-semibold text-amber-500 tracking-widest uppercase leading-none mt-1">EuroWarsztat</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex space-x-8 items-center">
+          <a href="index.html" class="nav-link font-medium text-slate-600 hover:text-brand-primary transition-colors py-2">Start</a>
+          
+          <!-- Dropdown Services -->
+          <div class="relative group py-2">
+            <button class="nav-link flex items-center space-x-1 font-medium text-slate-600 hover:text-brand-primary transition-colors focus:outline-none">
+              <span>Usługi</span>
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+            </button>
+            <div class="absolute left-1/2 -translate-x-1/2 top-full hidden group-hover:block w-72 bg-white rounded-xl shadow-xl border border-slate-100 p-2 py-3 mt-1 animate-fade-in">
+              <a href="uslugi/mechanika-ogolna.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 transition-colors">
+                <span class="text-brand-primary font-bold text-lg">⚙️</span>
+                <div>
+                  <div class="font-semibold text-slate-800 text-sm">Mechanika Ogólna</div>
+                  <div class="text-xs text-slate-500">Naprawy silnika, rozrządy, sprzęgła</div>
+                </div>
+              </a>
+              <a href="uslugi/diagnostyka.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 transition-colors">
+                <span class="text-brand-primary font-bold text-lg">💻</span>
+                <div>
+                  <div class="font-semibold text-slate-800 text-sm">Diagnostyka Komputerowa</div>
+                  <div class="text-xs text-slate-500">Odczyt błędów OBD, adaptacje</div>
+                </div>
+              </a>
+              <a href="uslugi/uklady-jezdne.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 transition-colors">
+                <span class="text-brand-primary font-bold text-lg">🛑</span>
+                <div>
+                  <div class="font-semibold text-slate-800 text-sm">Układy Jezdne & Bezpieczeństwo</div>
+                  <div class="text-xs text-slate-500">Hamulce, zawieszenie, amortyzatory</div>
+                </div>
+              </a>
+              <a href="uslugi/klimatyzacja.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 transition-colors">
+                <span class="text-brand-primary font-bold text-lg">❄️</span>
+                <div>
+                  <div class="font-semibold text-slate-800 text-sm">Serwis Klimatyzacji</div>
+                  <div class="text-xs text-slate-500">Napełnianie, odgrzybianie, ozonowanie</div>
+                </div>
+              </a>
+              <a href="uslugi/elektryka.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 transition-colors">
+                <span class="text-brand-primary font-bold text-lg">⚡</span>
+                <div>
+                  <div class="font-semibold text-slate-800 text-sm">Elektryka Pojazdowa</div>
+                  <div class="text-xs text-slate-500">Alternatory, rozruszniki, kable</div>
+                </div>
+              </a>
+              <a href="uslugi/wulkanizacja.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 transition-colors">
+                <span class="text-brand-primary font-bold text-lg">🔧</span>
+                <div>
+                  <div class="font-semibold text-slate-800 text-sm">Wulkanizacja & Opony</div>
+                  <div class="text-xs text-slate-500">Wymiana opon, wyważanie kół</div>
+                </div>
+              </a>
+            </div>
+          </div>
+
+          <a href="sklep.html" class="nav-link font-medium text-slate-600 hover:text-brand-primary transition-colors py-2">Sklep Części</a>
+          <a href="kontakt.html" class="nav-link font-medium text-slate-600 hover:text-brand-primary transition-colors py-2">Kontakt</a>
+        </nav>
+
+        <!-- Right Header Items: Contact CTA & Cart Icon -->
+        <div class="flex items-center space-x-4">
+          <!-- Shopping Cart Icon Badge -->
+          <a href="sklep.html" class="relative p-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 hover:text-brand-primary rounded-full transition-all focus:outline-none flex items-center justify-center">
+            <svg class="w-5.5 h-5.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+            </svg>
+            <span class="cart-badge absolute -top-1.5 -right-1.5 w-5 h-5 bg-red-600 text-white font-bold text-[10px] rounded-full hidden items-center justify-center cart-badge-pulse">0</span>
+          </a>
+
+          <!-- Quick Call Desktop CTA -->
+          <a href="tel:609845865" class="hidden sm:inline-flex items-center space-x-2 px-5 py-2.5 bg-brand-primary hover:bg-brand-primaryHover text-white font-semibold rounded-lg text-sm transition-all shadow-md shadow-sky-500/10 hover:-translate-y-0.5">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+            <span>Zadzwoń: 609 845 865</span>
+          </a>
+
+          <!-- Mobile Hamburger Toggle -->
+          <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-slate-900 focus:outline-none">
+            <svg class="w-6.5 h-6.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Mobile Drawer Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100 py-4 px-4 space-y-2 shadow-lg transition-all">
+      <a href="index.html" class="block py-2.5 px-3 rounded-lg text-slate-700 hover:bg-slate-50 font-medium">Start</a>
+      <div class="border-b border-slate-100 my-1"></div>
+      <div class="px-3 py-1.5 text-xs font-semibold text-slate-400 uppercase tracking-wider">Usługi Warsztatu</div>
+      <a href="uslugi/mechanika-ogolna.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm">⚙️ Mechanika Ogólna</a>
+      <a href="uslugi/diagnostyka.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm">💻 Diagnostyka Komputerowa</a>
+      <a href="uslugi/uklady-jezdne.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm">🛑 Układy Jezdne & Bezpieczeństwo</a>
+      <a href="uslugi/klimatyzacja.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm">❄️ Serwis Klimatyzacji</a>
+      <a href="uslugi/elektryka.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm">⚡ Elektryka Pojazdowa</a>
+      <a href="uslugi/wulkanizacja.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm">🔧 Wulkanizacja</a>
+      <div class="border-b border-slate-100 my-1"></div>
+      <a href="sklep.html" class="block py-2.5 px-3 rounded-lg text-slate-700 hover:bg-slate-50 font-medium">Sklep Części</a>
+      <a href="kontakt.html" class="block py-2.5 px-3 rounded-lg text-slate-700 hover:bg-slate-50 font-medium">Kontakt</a>
+      <a href="tel:609845865" class="flex items-center justify-center space-x-2 py-3 bg-brand-primary text-white font-semibold rounded-lg mt-4 shadow-md">
+        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+        <span>Zadzwoń: 609 845 865</span>
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="relative bg-slate-900 text-white overflow-hidden py-20 lg:py-32 flex items-center">
+    <!-- Abstract subtle backgrounds to make it premium -->
+    <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('https://images.unsplash.com/photo-1486006920555-c77dce18193b?q=80&w=1200&auto=format&fit=crop');"></div>
+    <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900 to-transparent"></div>
+    
+    <!-- Design accent shape -->
+    <div class="absolute right-0 top-0 bottom-0 w-1/3 bg-sky-600/10 blur-3xl rounded-full translate-x-1/2"></div>
+    
+    <div class="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full z-10">
+      <div class="max-w-2xl">
+        <!-- EuroWarsztat Partner Badge -->
+        <div class="inline-flex items-center space-x-2 bg-amber-500/10 border border-amber-500/30 text-amber-400 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider mb-6 animate-fade-in">
+          <span class="flex h-2 w-2 relative">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-amber-400 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-2 w-2 bg-amber-500"></span>
+          </span>
+          <span>Autoryzowany Serwis EuroWarsztat</span>
+        </div>
+        
+        <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-tight mb-6 animate-fade-in" style="animation-delay: 0.1s">
+          Twój zaufany warsztat <br><span class="text-transparent bg-clip-text bg-gradient-to-r from-sky-400 to-sky-300">w Myślenicach</span>
+        </h1>
+        
+        <p class="text-slate-300 text-lg sm:text-xl leading-relaxed mb-10 max-w-xl animate-fade-in" style="animation-delay: 0.2s">
+          Od 2008 roku naprawiamy, serwisujemy i doradzamy. Autoryzowany punkt sieci EuroWarsztat z pełnym zapleczem diagnostycznym i sklepem z częściami zamiennymi przy ul. Armii Krajowej 2.
+        </p>
+        
+        <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4 animate-fade-in" style="animation-delay: 0.3s">
+          <a href="tel:609845865" class="inline-flex items-center justify-center px-8 py-4 bg-brand-primary hover:bg-brand-primaryHover text-white font-bold rounded-lg transition-all transform hover:-translate-y-0.5 shadow-lg shadow-sky-500/25">
+            Umów wizytę — 609 845 865
+          </a>
+          <a href="#services" class="inline-flex items-center justify-center px-8 py-4 bg-slate-800 hover:bg-slate-700 text-white font-bold rounded-lg transition-all border border-slate-700 hover:border-slate-600">
+            Zobacz nasze usługi
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Info Highlights / Trust Section -->
+  <section class="py-16 bg-white border-b border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <div class="flex items-start space-x-4 p-6 rounded-xl hover:bg-slate-50 transition-colors duration-300">
+          <div class="flex-shrink-0 w-12 h-12 bg-sky-50 rounded-lg flex items-center justify-center text-brand-primary text-xl">🛡️</div>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">Poniedziałek - Sobota</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">Pracujemy od poniedziałku do piątku w godzinach 8:00 - 17:00, a w soboty 8:00 - 13:00.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4 p-6 rounded-xl hover:bg-slate-50 transition-colors duration-300">
+          <div class="flex-shrink-0 w-12 h-12 bg-sky-50 rounded-lg flex items-center justify-center text-brand-primary text-xl">⭐</div>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">5-Gwiazdkowy Serwis</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">Klienci doceniają naszą fachowość, profesjonalizm i konkurencyjne stawki na rynku lokalnym.</p>
+          </div>
+        </div>
+
+        <div class="flex items-start space-x-4 p-6 rounded-xl hover:bg-slate-50 transition-colors duration-300">
+          <div class="flex-shrink-0 w-12 h-12 bg-sky-50 rounded-lg flex items-center justify-center text-brand-primary text-xl">🏬</div>
+          <div>
+            <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">Dwie Lokalizacje</h3>
+            <p class="text-slate-500 text-sm leading-relaxed">Warsztat przy ul. Drogowców 7 oraz wyspecjalizowany sklep motoryzacyjny przy ul. Armii Krajowej 2.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Grid Section -->
+  <section id="services" class="py-24 bg-slate-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight mb-4">
+          Nasze Usługi Serwisowe
+        </h2>
+        <div class="w-12 h-1 bg-brand-primary mx-auto mb-6 rounded-full"></div>
+        <p class="text-slate-500">
+          Jako autoryzowany punkt sieci EuroWarsztat, oferujemy pełną obsługę aut osobowych i dostawczych w oparciu o najwyższe standardy techniczne.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Service Card 1 -->
+        <div class="bg-white rounded-xl border border-slate-100 p-8 hover-card-trigger flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-sky-50 text-brand-primary flex items-center justify-center rounded-lg text-2xl mb-6">⚙️</div>
+            <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">Mechanika Ogólna</h3>
+            <p class="text-slate-500 text-sm leading-relaxed mb-6">Naprawy bieżące, wymiana rozrządów, sprzęgieł oraz remonty i uszczelnianie elementów silnika.</p>
+          </div>
+          <a href="uslugi/mechanika-ogolna.html" class="inline-flex items-center text-brand-primary font-semibold text-sm hover:text-brand-primaryHover group">
+            <span>Dowiedz się więcej</span>
+            <svg class="w-4 h-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="bg-white rounded-xl border border-slate-100 p-8 hover-card-trigger flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-sky-50 text-brand-primary flex items-center justify-center rounded-lg text-2xl mb-6">💻</div>
+            <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">Diagnostyka Komputerowa</h3>
+            <p class="text-slate-500 text-sm leading-relaxed mb-6">Odczyt kodów błędów OBD, adaptacje czujników i komponentów, weryfikacja parametrów pracy jednostki napędowej.</p>
+          </div>
+          <a href="uslugi/diagnostyka.html" class="inline-flex items-center text-brand-primary font-semibold text-sm hover:text-brand-primaryHover group">
+            <span>Dowiedz się więcej</span>
+            <svg class="w-4 h-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="bg-white rounded-xl border border-slate-100 p-8 hover-card-trigger flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-sky-50 text-brand-primary flex items-center justify-center rounded-lg text-2xl mb-6">🛑</div>
+            <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">Układy Jezdne & Hamulce</h3>
+            <p class="text-slate-500 text-sm leading-relaxed mb-6">Naprawa układów hamulcowych (klocki, tarcze, zaciski), kierowniczych oraz elementów zawieszenia i amortyzacji.</p>
+          </div>
+          <a href="uslugi/uklady-jezdne.html" class="inline-flex items-center text-brand-primary font-semibold text-sm hover:text-brand-primaryHover group">
+            <span>Dowiedz się więcej</span>
+            <svg class="w-4 h-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="bg-white rounded-xl border border-slate-100 p-8 hover-card-trigger flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-sky-50 text-brand-primary flex items-center justify-center rounded-lg text-2xl mb-6">❄️</div>
+            <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">Klimatyzacja</h3>
+            <p class="text-slate-500 text-sm leading-relaxed mb-6">Napełnianie układu czynnikiem chłodzącym, kontrola szczelności, czyszczenie i odgrzybianie metodą ozonowania.</p>
+          </div>
+          <a href="uslugi/klimatyzacja.html" class="inline-flex items-center text-brand-primary font-semibold text-sm hover:text-brand-primaryHover group">
+            <span>Dowiedz się więcej</span>
+            <svg class="w-4 h-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="bg-white rounded-xl border border-slate-100 p-8 hover-card-trigger flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-sky-50 text-brand-primary flex items-center justify-center rounded-lg text-2xl mb-6">⚡</div>
+            <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">Elektryka Pojazdowa</h3>
+            <p class="text-slate-500 text-sm leading-relaxed mb-6">Naprawa alternatorów i rozruszników, diagnozowanie zwarć oraz usuwanie bieżących awarii elektrycznych.</p>
+          </div>
+          <a href="uslugi/elektryka.html" class="inline-flex items-center text-brand-primary font-semibold text-sm hover:text-brand-primaryHover group">
+            <span>Dowiedz się więcej</span>
+            <svg class="w-4 h-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="bg-white rounded-xl border border-slate-100 p-8 hover-card-trigger flex flex-col justify-between">
+          <div>
+            <div class="w-12 h-12 bg-sky-50 text-brand-primary flex items-center justify-center rounded-lg text-2xl mb-6">🔧</div>
+            <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">Wulkanizacja</h3>
+            <p class="text-slate-500 text-sm leading-relaxed mb-6">Sezonowa wymiana opon, wyważanie kół, naprawa przebitych kół oraz diagnostyka opon i ciśnienia.</p>
+          </div>
+          <a href="uslugi/wulkanizacja.html" class="inline-flex items-center text-brand-primary font-semibold text-sm hover:text-brand-primaryHover group">
+            <span>Dowiedz się więcej</span>
+            <svg class="w-4 h-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- E-commerce Promo section -->
+  <section class="py-24 bg-slate-900 text-white relative overflow-hidden">
+    <div class="absolute right-0 top-0 bottom-0 w-1/2 bg-sky-500/5 blur-3xl rounded-full translate-x-1/3"></div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        <div>
+          <span class="text-sky-400 font-bold uppercase text-xs tracking-wider">Sklep z częściami stacjonarnie & online</span>
+          <h2 class="font-heading font-extrabold text-3xl sm:text-4xl tracking-tight mt-3 mb-6">
+            Kup oleje, filtry i akcesoria na Armii Krajowej 2
+          </h2>
+          <p class="text-slate-400 leading-relaxed mb-8">
+            Prowadzimy punkt handlowy oferujący oryginalne płyny eksploatacyjne, baterie, wycieraczki, oświetlenie i filtry. Teraz możesz przejrzeć ofertę naszego sklepu online, skompletować zamówienie i przesłać koszyk bezpośrednio na nasz numer WhatsApp. Odpiszemy w kilka chwil!
+          </p>
+          <div class="flex flex-wrap gap-4">
+            <a href="sklep.html" class="inline-flex items-center px-6 py-3.5 bg-brand-primary hover:bg-brand-primaryHover text-white font-bold rounded-lg transition-all shadow-md shadow-sky-500/10">
+              Przeglądaj sklep online
+            </a>
+            <a href="kontakt.html" class="inline-flex items-center px-6 py-3.5 bg-slate-800 hover:bg-slate-700 text-slate-300 font-semibold rounded-lg border border-slate-700 transition-all">
+              Sprawdź adres sklepu
+            </a>
+          </div>
+        </div>
+        <div class="bg-slate-800/80 border border-slate-700 p-8 rounded-2xl relative shadow-xl backdrop-blur-md">
+          <h3 class="font-heading font-bold text-xl mb-6 flex items-center space-x-2">
+            <span class="text-yellow-500">⚡</span>
+            <span>Błyskawiczne zamówienie WhatsApp</span>
+          </h3>
+          <div class="space-y-4">
+            <div class="flex items-center space-x-3 text-sm text-slate-300 bg-slate-900/50 p-3 rounded-lg border border-slate-700/50">
+              <span class="text-lg">🛒</span>
+              <span>Dodajesz potrzebne płyny, filtry lub wycieraczki do koszyka.</span>
+            </div>
+            <div class="flex items-center space-x-3 text-sm text-slate-300 bg-slate-900/50 p-3 rounded-lg border border-slate-700/50">
+              <span class="text-lg">💬</span>
+              <span>Klikasz zamów, a system generuje wiadomość z koszykiem.</span>
+            </div>
+            <div class="flex items-center space-x-3 text-sm text-slate-300 bg-slate-900/50 p-3 rounded-lg border border-slate-700/50">
+              <span class="text-lg">✅</span>
+              <span>Wiadomość trafia do nas na WhatsApp, a my rezerwujemy części do odbioru.</span>
+            </div>
+          </div>
+          <div class="mt-8 border-t border-slate-700 pt-6 flex justify-between items-center text-xs text-slate-400">
+            <span>Obsługa zamówień: pon-pt 8-17, sob 8-13</span>
+            <span class="text-emerald-500 font-bold">Aktywne</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Client Reviews Slider/Quotes Section -->
+  <section class="py-24 bg-slate-50 overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto mb-16">
+        <span class="text-brand-primary font-bold uppercase text-xs tracking-wider">Zaufanie i opinie</span>
+        <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-slate-900 tracking-tight mt-3 mb-4">
+          Co mówią nasi klienci
+        </h2>
+        <div class="w-12 h-1 bg-brand-primary mx-auto mb-6 rounded-full"></div>
+      </div>
+
+      <!-- Slider Grid Wrapper -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Review Card 1 -->
+        <div class="bg-white border border-slate-100 rounded-xl p-8 shadow-sm flex flex-col justify-between hover-card-trigger">
+          <div>
+            <div class="flex items-center space-x-1 text-brand-accent mb-4 text-sm">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
+              „Gorąco polecam serwis Motobajer! Jestem bardzo zadowolony z usług, które otrzymałem. Obsługa była niezwykle profesjonalna i uprzejma."
+            </p>
+          </div>
+          <div class="flex items-center space-x-3 border-t border-slate-50 pt-4">
+            <div class="w-8 h-8 rounded-full bg-sky-100 text-brand-primary flex items-center justify-center font-bold text-xs">ML</div>
+            <div>
+              <div class="font-bold text-sm text-slate-900">Mateusz Lenart</div>
+              <div class="text-[11px] text-slate-400">rok temu</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Card 2 -->
+        <div class="bg-white border border-slate-100 rounded-xl p-8 shadow-sm flex flex-col justify-between hover-card-trigger">
+          <div>
+            <div class="flex items-center space-x-1 text-brand-accent mb-4 text-sm">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
+              „Bardzo miła obsługa i chętnie pomagają i udzielają informacji fachowców którzy znają się na rzeczy i ceny mają przystępne polecam ten sklep"
+            </p>
+          </div>
+          <div class="flex items-center space-x-3 border-t border-slate-50 pt-4">
+            <div class="w-8 h-8 rounded-full bg-sky-100 text-brand-primary flex items-center justify-center font-bold text-xs">JŻ</div>
+            <div>
+              <div class="font-bold text-sm text-slate-900">Józek Żak</div>
+              <div class="text-[11px] text-slate-400">rok temu</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Review Card 3 -->
+        <div class="bg-white border border-slate-100 rounded-xl p-8 shadow-sm flex flex-col justify-between hover-card-trigger">
+          <div>
+            <div class="flex items-center space-x-1 text-brand-accent mb-4 text-sm">
+              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+            </div>
+            <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
+              „Polecam. Duży wybór, Konkurencyjne ceny, fachowa obsługa, i Wspaniały warsztat samochodowy."
+            </p>
+          </div>
+          <div class="flex items-center space-x-3 border-t border-slate-50 pt-4">
+            <div class="w-8 h-8 rounded-full bg-sky-100 text-brand-primary flex items-center justify-center font-bold text-xs">MW</div>
+            <div>
+              <div class="font-bold text-sm text-slate-900">MrWyntel</div>
+              <div class="text-[11px] text-slate-400">rok temu</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Locations Section -->
+  <section class="py-24 bg-white border-t border-slate-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-3 gap-12 items-start">
+        
+        <div class="lg:col-span-1">
+          <span class="text-brand-primary font-bold uppercase text-xs tracking-wider">Nasze Lokalizacje</span>
+          <h2 class="font-heading font-extrabold text-3xl text-slate-900 tracking-tight mt-3 mb-6">
+            Gdzie nas znajdziesz w Myślenicach?
+          </h2>
+          <p class="text-slate-500 leading-relaxed mb-8">
+            Dla wygody naszych klientów rozdzieliliśmy część warsztatową od sklepu handlowego. Sprawdź, który punkt odpowiada Twoim potrzebom.
+          </p>
+          <div class="space-y-4 text-sm text-slate-600">
+            <div class="flex items-center space-x-3">
+              <span class="text-lg">📞</span>
+              <a href="tel:609845865" class="hover:underline font-semibold text-slate-900">609 845 865</a>
+            </div>
+            <div class="flex items-center space-x-3">
+              <span class="text-lg">☎️</span>
+              <a href="tel:122742306" class="hover:underline">(12) 274 23 06</a>
+            </div>
+            <div class="flex items-center space-x-3">
+              <span class="text-lg">✉️</span>
+              <a href="mailto:motobajer@eurowarsztat.pl" class="hover:underline">motobajer@eurowarsztat.pl</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-8">
+          
+          <!-- Location Box 1 -->
+          <div class="bg-slate-50 border border-slate-200/50 rounded-xl p-6 flex flex-col justify-between hover-card-trigger">
+            <div>
+              <div class="text-xs font-bold text-amber-500 uppercase tracking-widest mb-2">Warsztat & Siedziba</div>
+              <h3 class="font-heading font-bold text-xl text-slate-900 mb-2">Centrum Serwisowe</h3>
+              <p class="text-slate-500 text-sm mb-4">ul. Drogowców 7<br>32-400 Myślenice</p>
+              <p class="text-slate-500 text-xs leading-relaxed">Miejsce napraw pojazdów, wulkanizacji, diagnostyki komputerowej i napełniania klimatyzacji.</p>
+            </div>
+            <a href="kontakt.html" class="mt-6 text-brand-primary text-xs font-bold hover:underline flex items-center space-x-1">
+              <span>Zobacz mapę dojazdu</span>
+              <span>→</span>
+            </a>
+          </div>
+
+          <!-- Location Box 2 -->
+          <div class="bg-slate-50 border border-slate-200/50 rounded-xl p-6 flex flex-col justify-between hover-card-trigger">
+            <div>
+              <div class="text-xs font-bold text-brand-primary uppercase tracking-widest mb-2">Sklep Motoryzacyjny</div>
+              <h3 class="font-heading font-bold text-xl text-slate-900 mb-2">Sklep Auto-Części</h3>
+              <p class="text-slate-500 text-sm mb-4">ul. Armii Krajowej 2<br>32-400 Myślenice</p>
+              <p class="text-slate-500 text-xs leading-relaxed">Wygodna lokalizacja bliżej centrum. Sprzedaż detali eksploatacyjnych, olejów, żarówek i akcesoriów.</p>
+            </div>
+            <a href="kontakt.html" class="mt-6 text-brand-primary text-xs font-bold hover:underline flex items-center space-x-1">
+              <span>Zobacz mapę dojazdu</span>
+              <span>→</span>
+            </a>
+          </div>
+
+        </div>
+
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- CTA Bottom -->
+  <section class="py-20 bg-slate-50 border-t border-slate-100 text-center">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="font-heading font-extrabold text-3xl sm:text-4xl text-slate-900 mb-6">
+        Masz problem z samochodem?
+      </h2>
+      <p class="text-slate-500 text-lg mb-8 max-w-xl mx-auto">
+        Zadzwoń do nas lub odwiedź nasz warsztat. Zdiagnozujemy usterkę, wycenimy naprawę i przywrócimy Twoje auto do pełnej sprawności.
+      </p>
+      <div class="flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+        <a href="tel:609845865" class="w-full sm:w-auto px-8 py-4 bg-brand-primary hover:bg-brand-primaryHover text-white font-bold rounded-lg transition-all shadow-md shadow-sky-500/10">
+          Zadzwoń: 609 845 865
+        </a>
+        <a href="kontakt.html" class="w-full sm:w-auto px-8 py-4 bg-white hover:bg-slate-50 text-slate-700 font-bold rounded-lg border border-slate-200 transition-all">
+          Formularz kontaktowy
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="mt-auto bg-slate-900 text-slate-400 border-t border-slate-800 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-12">
+        
+        <div class="md:col-span-2">
+          <div class="flex items-center space-x-3 mb-4">
+            <div class="w-8 h-8 bg-brand-primary flex items-center justify-center rounded text-white font-heading font-extrabold text-sm tracking-wider">
+              MB
+            </div>
+            <span class="font-heading font-extrabold text-lg text-white tracking-tight">MOTOBAJER</span>
+          </div>
+          <p class="text-sm text-slate-500 leading-relaxed max-w-sm mb-4">
+            Działamy na rynku od 2008 roku, dbając o bezpieczeństwo i sprawność pojazdów naszych klientów w Myślenicach i okolicach.
+          </p>
+          <p class="text-xs text-slate-600">
+            NIP: 6811341146 | REGON: 120696804
+          </p>
+        </div>
+
+        <div>
+          <h4 class="font-heading font-bold text-white text-sm tracking-wider uppercase mb-4">Nawigacja</h4>
+          <ul class="space-y-2.5 text-sm">
+            <li><a href="index.html" class="hover:text-white transition-colors">Start</a></li>
+            <li><a href="sklep.html" class="hover:text-white transition-colors">Sklep online</a></li>
+            <li><a href="kontakt.html" class="hover:text-white transition-colors">Kontakt</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="font-heading font-bold text-white text-sm tracking-wider uppercase mb-4">Usługi</h4>
+          <ul class="space-y-2.5 text-sm text-slate-500">
+            <li><a href="uslugi/mechanika-ogolna.html" class="hover:text-white transition-colors">Mechanika Ogólna</a></li>
+            <li><a href="uslugi/diagnostyka.html" class="hover:text-white transition-colors">Diagnostyka</a></li>
+            <li><a href="uslugi/uklady-jezdne.html" class="hover:text-white transition-colors">Hamulce & Układy Jezdne</a></li>
+            <li><a href="uslugi/klimatyzacja.html" class="hover:text-white transition-colors">Klimatyzacja</a></li>
+            <li><a href="uslugi/elektryka.html" class="hover:text-white transition-colors">Elektryka</a></li>
+            <li><a href="uslugi/wulkanizacja.html" class="hover:text-white transition-colors">Wulkanizacja</a></li>
+          </ul>
+        </div>
+
+      </div>
+      
+      <div class="border-t border-slate-800/80 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-slate-600">
+        <p>&copy; 2026 MOTOBAJER Stanisław Bajer. Wszelkie prawa zastrzeżone.</p>
+        <p class="mt-4 md:mt-0">Autoryzowany punkt sieci EuroWarsztat</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/main.js"></script>
+</body>
+</html>
