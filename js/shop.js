@@ -208,7 +208,7 @@ document.addEventListener('DOMContentLoaded', () => {
           <span class="text-brand-primary font-bold text-lg">${prod.price.toFixed(2)} PLN</span>
           <button data-id="${prod.id}" class="add-to-cart-btn px-3.5 py-2 bg-slate-900 hover:bg-brand-primary text-white text-xs font-semibold rounded-lg transition-all flex items-center space-x-1">
             <span>Dodaj</span>
-            <span>+</span>
+            <i data-lucide="plus" class="w-3.5 h-3.5"></i>
           </button>
         </div>
       `;
@@ -223,6 +223,11 @@ document.addEventListener('DOMContentLoaded', () => {
         addToCart(id);
       });
     });
+
+    // Initialize Lucide Icons
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
   }
 
   function renderCart() {
@@ -235,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (cart.length === 0) {
       cartItemsContainer.innerHTML = `
         <div class="text-center py-12 text-slate-400">
-          <span class="text-3xl block mb-2">🛒</span>
+          <i data-lucide="shopping-cart" class="w-12 h-12 mx-auto text-slate-300 mb-2"></i>
           <span class="text-sm">Twój koszyk jest pusty</span>
         </div>
       `;
@@ -264,12 +269,16 @@ document.addEventListener('DOMContentLoaded', () => {
             <span class="text-[11px] text-brand-primary font-semibold block mt-0.5">${prod.price.toFixed(2)} PLN</span>
           </div>
           <div class="flex items-center space-x-1 flex-shrink-0">
-            <button data-id="${item.id}" class="cart-minus-btn w-6 h-6 border border-slate-300 rounded bg-white text-slate-600 hover:bg-slate-100 text-xs font-bold flex items-center justify-center">-</button>
+            <button data-id="${item.id}" class="cart-minus-btn w-6 h-6 border border-slate-300 rounded bg-white text-slate-600 hover:bg-slate-100 flex items-center justify-center">
+              <i data-lucide="minus" class="w-3 h-3"></i>
+            </button>
             <span class="text-xs font-bold w-5 text-center text-slate-800">${item.quantity}</span>
-            <button data-id="${item.id}" class="cart-plus-btn w-6 h-6 border border-slate-300 rounded bg-white text-slate-600 hover:bg-slate-100 text-xs font-bold flex items-center justify-center">+</button>
+            <button data-id="${item.id}" class="cart-plus-btn w-6 h-6 border border-slate-300 rounded bg-white text-slate-600 hover:bg-slate-100 flex items-center justify-center">
+              <i data-lucide="plus" class="w-3 h-3"></i>
+            </button>
           </div>
           <button data-id="${item.id}" class="cart-remove-btn text-slate-400 hover:text-red-600 transition-colors p-1 flex-shrink-0">
-            🗑️
+            <i data-lucide="trash-2" class="w-4 h-4"></i>
           </button>
         `;
         cartItemsContainer.appendChild(cartItemEl);
@@ -299,6 +308,11 @@ document.addEventListener('DOMContentLoaded', () => {
         removeItem(id);
       });
     });
+
+    // Initialize Lucide Icons
+    if (typeof lucide !== 'undefined') {
+      lucide.createIcons();
+    }
   }
 
   // Drawer actions

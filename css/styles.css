@@ -25,6 +25,10 @@
   --success: 142 76% 36%;        /* Safe green */
   --border-color: 215 20% 90%;
   --border-color-dark: 220 30% 18%;
+
+  /* Emil design-engineering ease curves */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
 }
 
 /* Base Styles */
@@ -44,9 +48,17 @@ h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-heading);
 }
 
+/* Tactile Click Feedback for buttons & press targets */
+button:active,
+.btn:active,
+a:active,
+.add-to-cart-btn:active {
+  transform: scale(0.97);
+}
+
 /* Animations */
 @keyframes fadeIn {
-  from { opacity: 0; transform: translateY(10px); }
+  from { opacity: 0; transform: translateY(8px); }
   to { opacity: 1; transform: translateY(0); }
 }
 
@@ -61,11 +73,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .animate-fade-in {
-  animation: fadeIn 0.5s ease-out forwards;
+  animation: fadeIn 0.4s cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 .animate-slide-in-right {
-  animation: slideInRight 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+  animation: slideInRight 0.25s cubic-bezier(0.32, 0.72, 0, 1) forwards;
 }
 
 /* Glassmorphism Classes */
@@ -118,12 +130,15 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Card hover scaling and micro-animations */
 .hover-card-trigger {
-  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition: transform 200ms var(--ease-out), border-color 200ms ease, box-shadow 200ms ease;
 }
-.hover-card-trigger:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 24px -10px rgba(15, 23, 42, 0.15);
-  border-color: hsla(var(--primary), 0.4);
+
+@media (hover: hover) and (pointer: fine) {
+  .hover-card-trigger:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px -10px rgba(15, 23, 42, 0.15);
+    border-color: hsla(var(--primary), 0.4);
+  }
 }
 
 /* Cart badge pulse */
@@ -134,3 +149,11 @@ h1, h2, h3, h4, h5, h6 {
   0% { transform: scale(1); }
   100% { transform: scale(1.15); }
 }
+
+/* Lucide icon default styling */
+.lucide {
+  display: inline-block;
+  vertical-align: middle;
+  stroke-width: 2px;
+}
+

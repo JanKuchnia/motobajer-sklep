@@ -11,7 +11,7 @@
   <meta property="og:url" content="https://www.motobajer.pl/">
   <meta property="og:title" content="MOTOBAJER Myślenice — Warsztat Samochodowy & Auto-Części | EuroWarsztat">
   <meta property="og:description" content="Profesjonalny serwis samochodowy w Myślenicach. Mechanika, diagnostyka komputerowa, klimatyzacja, wulkanizacja i sklep z częściami. Sieć EuroWarsztat. Zadzwoń: 609 845 865.">
-  <meta property="og:image" content="https://images.unsplash.com/photo-1486006920555-c77dce18193b?q=80&w=600&auto=format&fit=crop">
+  <meta property="og:image" content="hero.webp">
 
   <!-- CSS Stylesheets -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -66,46 +66,46 @@
           <div class="relative group py-2">
             <button class="nav-link flex items-center space-x-1 font-medium text-slate-600 hover:text-brand-primary transition-colors focus:outline-none">
               <span>Usługi</span>
-              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>
+              <i data-lucide="chevron-down" class="w-4 h-4"></i>
             </button>
             <div class="absolute left-1/2 -translate-x-1/2 top-full hidden group-hover:block w-72 bg-white rounded-xl shadow-xl border border-slate-100 p-2 py-3 mt-1 animate-fade-in">
               <a href="uslugi/mechanika-ogolna.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 transition-colors">
-                <span class="text-brand-primary font-bold text-lg">⚙️</span>
+                <i data-lucide="wrench" class="w-5 h-5 text-brand-primary flex-shrink-0"></i>
                 <div>
                   <div class="font-semibold text-slate-800 text-sm">Mechanika Ogólna</div>
                   <div class="text-xs text-slate-500">Naprawy silnika, rozrządy, sprzęgła</div>
                 </div>
               </a>
               <a href="uslugi/diagnostyka.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 transition-colors">
-                <span class="text-brand-primary font-bold text-lg">💻</span>
+                <i data-lucide="monitor" class="w-5 h-5 text-brand-primary flex-shrink-0"></i>
                 <div>
                   <div class="font-semibold text-slate-800 text-sm">Diagnostyka Komputerowa</div>
                   <div class="text-xs text-slate-500">Odczyt błędów OBD, adaptacje</div>
                 </div>
               </a>
               <a href="uslugi/uklady-jezdne.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 transition-colors">
-                <span class="text-brand-primary font-bold text-lg">🛑</span>
+                <i data-lucide="shield" class="w-5 h-5 text-brand-primary flex-shrink-0"></i>
                 <div>
                   <div class="font-semibold text-slate-800 text-sm">Układy Jezdne & Bezpieczeństwo</div>
                   <div class="text-xs text-slate-500">Hamulce, zawieszenie, amortyzatory</div>
                 </div>
               </a>
               <a href="uslugi/klimatyzacja.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 transition-colors">
-                <span class="text-brand-primary font-bold text-lg">❄️</span>
+                <i data-lucide="snowflake" class="w-5 h-5 text-brand-primary flex-shrink-0"></i>
                 <div>
                   <div class="font-semibold text-slate-800 text-sm">Serwis Klimatyzacji</div>
                   <div class="text-xs text-slate-500">Napełnianie, odgrzybianie, ozonowanie</div>
                 </div>
               </a>
               <a href="uslugi/elektryka.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 transition-colors">
-                <span class="text-brand-primary font-bold text-lg">⚡</span>
+                <i data-lucide="zap" class="w-5 h-5 text-brand-primary flex-shrink-0"></i>
                 <div>
                   <div class="font-semibold text-slate-800 text-sm">Elektryka Pojazdowa</div>
                   <div class="text-xs text-slate-500">Alternatory, rozruszniki, kable</div>
                 </div>
               </a>
               <a href="uslugi/wulkanizacja.html" class="flex items-center space-x-3 p-3 rounded-lg hover:bg-slate-50 transition-colors">
-                <span class="text-brand-primary font-bold text-lg">🔧</span>
+                <i data-lucide="disc" class="w-5 h-5 text-brand-primary flex-shrink-0"></i>
                 <div>
                   <div class="font-semibold text-slate-800 text-sm">Wulkanizacja & Opony</div>
                   <div class="text-xs text-slate-500">Wymiana opon, wyważanie kół</div>
@@ -122,23 +122,19 @@
         <div class="flex items-center space-x-4">
           <!-- Shopping Cart Icon Badge -->
           <a href="sklep.html" class="relative p-2.5 bg-slate-100 hover:bg-slate-200 text-slate-700 hover:text-brand-primary rounded-full transition-all focus:outline-none flex items-center justify-center">
-            <svg class="w-5.5 h-5.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
-            </svg>
+            <i data-lucide="shopping-cart" class="w-5.5 h-5.5"></i>
             <span class="cart-badge absolute -top-1.5 -right-1.5 w-5 h-5 bg-red-600 text-white font-bold text-[10px] rounded-full hidden items-center justify-center cart-badge-pulse">0</span>
           </a>
 
           <!-- Quick Call Desktop CTA -->
           <a href="tel:609845865" class="hidden sm:inline-flex items-center space-x-2 px-5 py-2.5 bg-brand-primary hover:bg-brand-primaryHover text-white font-semibold rounded-lg text-sm transition-all shadow-md shadow-sky-500/10 hover:-translate-y-0.5">
-            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+            <i data-lucide="phone" class="w-4 h-4"></i>
             <span>Zadzwoń: 609 845 865</span>
           </a>
 
           <!-- Mobile Hamburger Toggle -->
           <button id="mobile-menu-btn" class="md:hidden p-2 text-slate-600 hover:text-slate-900 focus:outline-none">
-            <svg class="w-6.5 h-6.5" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
+            <i data-lucide="menu" class="w-6.5 h-6.5"></i>
           </button>
         </div>
 
@@ -150,17 +146,17 @@
       <a href="index.html" class="block py-2.5 px-3 rounded-lg text-slate-700 hover:bg-slate-50 font-medium">Start</a>
       <div class="border-b border-slate-100 my-1"></div>
       <div class="px-3 py-1.5 text-xs font-semibold text-slate-400 uppercase tracking-wider">Usługi Warsztatu</div>
-      <a href="uslugi/mechanika-ogolna.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm">⚙️ Mechanika Ogólna</a>
-      <a href="uslugi/diagnostyka.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm">💻 Diagnostyka Komputerowa</a>
-      <a href="uslugi/uklady-jezdne.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm">🛑 Układy Jezdne & Bezpieczeństwo</a>
-      <a href="uslugi/klimatyzacja.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm">❄️ Serwis Klimatyzacji</a>
-      <a href="uslugi/elektryka.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm">⚡ Elektryka Pojazdowa</a>
-      <a href="uslugi/wulkanizacja.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm">🔧 Wulkanizacja</a>
+      <a href="uslugi/mechanika-ogolna.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm"><i data-lucide="wrench" class="w-4 h-4 mr-2 flex-shrink-0 inline-block"></i>Mechanika Ogólna</a>
+      <a href="uslugi/diagnostyka.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm"><i data-lucide="monitor" class="w-4 h-4 mr-2 flex-shrink-0 inline-block"></i>Diagnostyka Komputerowa</a>
+      <a href="uslugi/uklady-jezdne.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm"><i data-lucide="shield" class="w-4 h-4 mr-2 flex-shrink-0 inline-block"></i>Układy Jezdne & Bezpieczeństwo</a>
+      <a href="uslugi/klimatyzacja.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm"><i data-lucide="snowflake" class="w-4 h-4 mr-2 flex-shrink-0 inline-block"></i>Serwis Klimatyzacji</a>
+      <a href="uslugi/elektryka.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm"><i data-lucide="zap" class="w-4 h-4 mr-2 flex-shrink-0 inline-block"></i>Elektryka Pojazdowa</a>
+      <a href="uslugi/wulkanizacja.html" class="block py-2 px-3 rounded-lg text-slate-600 hover:bg-slate-50 text-sm"><i data-lucide="disc" class="w-4 h-4 mr-2 flex-shrink-0 inline-block"></i>Wulkanizacja</a>
       <div class="border-b border-slate-100 my-1"></div>
       <a href="sklep.html" class="block py-2.5 px-3 rounded-lg text-slate-700 hover:bg-slate-50 font-medium">Sklep Części</a>
       <a href="kontakt.html" class="block py-2.5 px-3 rounded-lg text-slate-700 hover:bg-slate-50 font-medium">Kontakt</a>
       <a href="tel:609845865" class="flex items-center justify-center space-x-2 py-3 bg-brand-primary text-white font-semibold rounded-lg mt-4 shadow-md">
-        <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20"><path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path></svg>
+        <i data-lucide="phone" class="w-4 h-4"></i>
         <span>Zadzwoń: 609 845 865</span>
       </a>
     </div>
@@ -169,7 +165,7 @@
   <!-- Hero Section -->
   <section class="relative bg-slate-900 text-white overflow-hidden py-20 lg:py-32 flex items-center">
     <!-- Abstract subtle backgrounds to make it premium -->
-    <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('https://images.unsplash.com/photo-1486006920555-c77dce18193b?q=80&w=1200&auto=format&fit=crop');"></div>
+    <div class="absolute inset-0 bg-cover bg-center opacity-15" style="background-image: url('hero.webp');"></div>
     <div class="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-900 to-transparent"></div>
     
     <!-- Design accent shape -->
@@ -212,7 +208,7 @@
       <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
         
         <div class="flex items-start space-x-4 p-6 rounded-xl hover:bg-slate-50 transition-colors duration-300">
-          <div class="flex-shrink-0 w-12 h-12 bg-sky-50 rounded-lg flex items-center justify-center text-brand-primary text-xl">🛡️</div>
+          <div class="flex-shrink-0 w-12 h-12 bg-sky-50 rounded-lg flex items-center justify-center text-brand-primary"><i data-lucide="clock" class="w-6 h-6"></i></div>
           <div>
             <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">Poniedziałek - Sobota</h3>
             <p class="text-slate-500 text-sm leading-relaxed">Pracujemy od poniedziałku do piątku w godzinach 8:00 - 17:00, a w soboty 8:00 - 13:00.</p>
@@ -220,7 +216,7 @@
         </div>
 
         <div class="flex items-start space-x-4 p-6 rounded-xl hover:bg-slate-50 transition-colors duration-300">
-          <div class="flex-shrink-0 w-12 h-12 bg-sky-50 rounded-lg flex items-center justify-center text-brand-primary text-xl">⭐</div>
+          <div class="flex-shrink-0 w-12 h-12 bg-sky-50 rounded-lg flex items-center justify-center text-brand-primary"><i data-lucide="star" class="w-6 h-6 text-amber-500 fill-amber-500"></i></div>
           <div>
             <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">5-Gwiazdkowy Serwis</h3>
             <p class="text-slate-500 text-sm leading-relaxed">Klienci doceniają naszą fachowość, profesjonalizm i konkurencyjne stawki na rynku lokalnym.</p>
@@ -228,7 +224,7 @@
         </div>
 
         <div class="flex items-start space-x-4 p-6 rounded-xl hover:bg-slate-50 transition-colors duration-300">
-          <div class="flex-shrink-0 w-12 h-12 bg-sky-50 rounded-lg flex items-center justify-center text-brand-primary text-xl">🏬</div>
+          <div class="flex-shrink-0 w-12 h-12 bg-sky-50 rounded-lg flex items-center justify-center text-brand-primary"><i data-lucide="map-pin" class="w-6 h-6"></i></div>
           <div>
             <h3 class="font-heading font-bold text-lg text-slate-900 mb-2">Dwie Lokalizacje</h3>
             <p class="text-slate-500 text-sm leading-relaxed">Warsztat przy ul. Drogowców 7 oraz wyspecjalizowany sklep motoryzacyjny przy ul. Armii Krajowej 2.</p>
@@ -258,78 +254,78 @@
         <!-- Service Card 1 -->
         <div class="bg-white rounded-xl border border-slate-100 p-8 hover-card-trigger flex flex-col justify-between">
           <div>
-            <div class="w-12 h-12 bg-sky-50 text-brand-primary flex items-center justify-center rounded-lg text-2xl mb-6">⚙️</div>
+            <div class="w-12 h-12 bg-sky-50 text-brand-primary flex items-center justify-center rounded-lg mb-6"><i data-lucide="wrench" class="w-6 h-6"></i></div>
             <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">Mechanika Ogólna</h3>
             <p class="text-slate-500 text-sm leading-relaxed mb-6">Naprawy bieżące, wymiana rozrządów, sprzęgieł oraz remonty i uszczelnianie elementów silnika.</p>
           </div>
           <a href="uslugi/mechanika-ogolna.html" class="inline-flex items-center text-brand-primary font-semibold text-sm hover:text-brand-primaryHover group">
             <span>Dowiedz się więcej</span>
-            <svg class="w-4 h-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+            <i data-lucide="chevron-right" class="w-4 h-4 ml-1 transform transition-transform group-hover:translate-x-1"></i>
           </a>
         </div>
 
         <!-- Service Card 2 -->
         <div class="bg-white rounded-xl border border-slate-100 p-8 hover-card-trigger flex flex-col justify-between">
           <div>
-            <div class="w-12 h-12 bg-sky-50 text-brand-primary flex items-center justify-center rounded-lg text-2xl mb-6">💻</div>
+            <div class="w-12 h-12 bg-sky-50 text-brand-primary flex items-center justify-center rounded-lg mb-6"><i data-lucide="monitor" class="w-6 h-6"></i></div>
             <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">Diagnostyka Komputerowa</h3>
             <p class="text-slate-500 text-sm leading-relaxed mb-6">Odczyt kodów błędów OBD, adaptacje czujników i komponentów, weryfikacja parametrów pracy jednostki napędowej.</p>
           </div>
           <a href="uslugi/diagnostyka.html" class="inline-flex items-center text-brand-primary font-semibold text-sm hover:text-brand-primaryHover group">
             <span>Dowiedz się więcej</span>
-            <svg class="w-4 h-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+            <i data-lucide="chevron-right" class="w-4 h-4 ml-1 transform transition-transform group-hover:translate-x-1"></i>
           </a>
         </div>
 
         <!-- Service Card 3 -->
         <div class="bg-white rounded-xl border border-slate-100 p-8 hover-card-trigger flex flex-col justify-between">
           <div>
-            <div class="w-12 h-12 bg-sky-50 text-brand-primary flex items-center justify-center rounded-lg text-2xl mb-6">🛑</div>
+            <div class="w-12 h-12 bg-sky-50 text-brand-primary flex items-center justify-center rounded-lg mb-6"><i data-lucide="shield" class="w-6 h-6"></i></div>
             <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">Układy Jezdne & Hamulce</h3>
             <p class="text-slate-500 text-sm leading-relaxed mb-6">Naprawa układów hamulcowych (klocki, tarcze, zaciski), kierowniczych oraz elementów zawieszenia i amortyzacji.</p>
           </div>
           <a href="uslugi/uklady-jezdne.html" class="inline-flex items-center text-brand-primary font-semibold text-sm hover:text-brand-primaryHover group">
             <span>Dowiedz się więcej</span>
-            <svg class="w-4 h-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+            <i data-lucide="chevron-right" class="w-4 h-4 ml-1 transform transition-transform group-hover:translate-x-1"></i>
           </a>
         </div>
 
         <!-- Service Card 4 -->
         <div class="bg-white rounded-xl border border-slate-100 p-8 hover-card-trigger flex flex-col justify-between">
           <div>
-            <div class="w-12 h-12 bg-sky-50 text-brand-primary flex items-center justify-center rounded-lg text-2xl mb-6">❄️</div>
+            <div class="w-12 h-12 bg-sky-50 text-brand-primary flex items-center justify-center rounded-lg mb-6"><i data-lucide="snowflake" class="w-6 h-6"></i></div>
             <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">Klimatyzacja</h3>
             <p class="text-slate-500 text-sm leading-relaxed mb-6">Napełnianie układu czynnikiem chłodzącym, kontrola szczelności, czyszczenie i odgrzybianie metodą ozonowania.</p>
           </div>
           <a href="uslugi/klimatyzacja.html" class="inline-flex items-center text-brand-primary font-semibold text-sm hover:text-brand-primaryHover group">
             <span>Dowiedz się więcej</span>
-            <svg class="w-4 h-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+            <i data-lucide="chevron-right" class="w-4 h-4 ml-1 transform transition-transform group-hover:translate-x-1"></i>
           </a>
         </div>
 
         <!-- Service Card 5 -->
         <div class="bg-white rounded-xl border border-slate-100 p-8 hover-card-trigger flex flex-col justify-between">
           <div>
-            <div class="w-12 h-12 bg-sky-50 text-brand-primary flex items-center justify-center rounded-lg text-2xl mb-6">⚡</div>
+            <div class="w-12 h-12 bg-sky-50 text-brand-primary flex items-center justify-center rounded-lg mb-6"><i data-lucide="zap" class="w-6 h-6"></i></div>
             <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">Elektryka Pojazdowa</h3>
             <p class="text-slate-500 text-sm leading-relaxed mb-6">Naprawa alternatorów i rozruszników, diagnozowanie zwarć oraz usuwanie bieżących awarii elektrycznych.</p>
           </div>
           <a href="uslugi/elektryka.html" class="inline-flex items-center text-brand-primary font-semibold text-sm hover:text-brand-primaryHover group">
             <span>Dowiedz się więcej</span>
-            <svg class="w-4 h-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+            <i data-lucide="chevron-right" class="w-4 h-4 ml-1 transform transition-transform group-hover:translate-x-1"></i>
           </a>
         </div>
 
         <!-- Service Card 6 -->
         <div class="bg-white rounded-xl border border-slate-100 p-8 hover-card-trigger flex flex-col justify-between">
           <div>
-            <div class="w-12 h-12 bg-sky-50 text-brand-primary flex items-center justify-center rounded-lg text-2xl mb-6">🔧</div>
+            <div class="w-12 h-12 bg-sky-50 text-brand-primary flex items-center justify-center rounded-lg mb-6"><i data-lucide="disc" class="w-6 h-6"></i></div>
             <h3 class="font-heading font-bold text-xl text-slate-900 mb-3">Wulkanizacja</h3>
             <p class="text-slate-500 text-sm leading-relaxed mb-6">Sezonowa wymiana opon, wyważanie kół, naprawa przebitych kół oraz diagnostyka opon i ciśnienia.</p>
           </div>
           <a href="uslugi/wulkanizacja.html" class="inline-flex items-center text-brand-primary font-semibold text-sm hover:text-brand-primaryHover group">
             <span>Dowiedz się więcej</span>
-            <svg class="w-4 h-4 ml-1 transform transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"></path></svg>
+            <i data-lucide="chevron-right" class="w-4 h-4 ml-1 transform transition-transform group-hover:translate-x-1"></i>
           </a>
         </div>
 
@@ -361,20 +357,20 @@
         </div>
         <div class="bg-slate-800/80 border border-slate-700 p-8 rounded-2xl relative shadow-xl backdrop-blur-md">
           <h3 class="font-heading font-bold text-xl mb-6 flex items-center space-x-2">
-            <span class="text-yellow-500">⚡</span>
+            <i data-lucide="zap" class="text-amber-500 w-5 h-5 flex-shrink-0"></i>
             <span>Błyskawiczne zamówienie WhatsApp</span>
           </h3>
           <div class="space-y-4">
             <div class="flex items-center space-x-3 text-sm text-slate-300 bg-slate-900/50 p-3 rounded-lg border border-slate-700/50">
-              <span class="text-lg">🛒</span>
+              <i data-lucide="shopping-cart" class="w-5 h-5 flex-shrink-0 text-brand-primary"></i>
               <span>Dodajesz potrzebne płyny, filtry lub wycieraczki do koszyka.</span>
             </div>
             <div class="flex items-center space-x-3 text-sm text-slate-300 bg-slate-900/50 p-3 rounded-lg border border-slate-700/50">
-              <span class="text-lg">💬</span>
+              <i data-lucide="message-square" class="w-5 h-5 flex-shrink-0 text-brand-primary"></i>
               <span>Klikasz zamów, a system generuje wiadomość z koszykiem.</span>
             </div>
             <div class="flex items-center space-x-3 text-sm text-slate-300 bg-slate-900/50 p-3 rounded-lg border border-slate-700/50">
-              <span class="text-lg">✅</span>
+              <i data-lucide="check-circle" class="w-5 h-5 flex-shrink-0 text-emerald-500"></i>
               <span>Wiadomość trafia do nas na WhatsApp, a my rezerwujemy części do odbioru.</span>
             </div>
           </div>
@@ -406,7 +402,7 @@
         <div class="bg-white border border-slate-100 rounded-xl p-8 shadow-sm flex flex-col justify-between hover-card-trigger">
           <div>
             <div class="flex items-center space-x-1 text-brand-accent mb-4 text-sm">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
             </div>
             <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
               „Gorąco polecam serwis Motobajer! Jestem bardzo zadowolony z usług, które otrzymałem. Obsługa była niezwykle profesjonalna i uprzejma."
@@ -425,7 +421,7 @@
         <div class="bg-white border border-slate-100 rounded-xl p-8 shadow-sm flex flex-col justify-between hover-card-trigger">
           <div>
             <div class="flex items-center space-x-1 text-brand-accent mb-4 text-sm">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
             </div>
             <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
               „Bardzo miła obsługa i chętnie pomagają i udzielają informacji fachowców którzy znają się na rzeczy i ceny mają przystępne polecam ten sklep"
@@ -444,7 +440,7 @@
         <div class="bg-white border border-slate-100 rounded-xl p-8 shadow-sm flex flex-col justify-between hover-card-trigger">
           <div>
             <div class="flex items-center space-x-1 text-brand-accent mb-4 text-sm">
-              <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+              <i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i><i data-lucide="star" class="w-4 h-4 fill-amber-500 text-amber-500"></i>
             </div>
             <p class="text-slate-600 text-sm leading-relaxed italic mb-6">
               „Polecam. Duży wybór, Konkurencyjne ceny, fachowa obsługa, i Wspaniały warsztat samochodowy."
@@ -480,15 +476,15 @@
           </p>
           <div class="space-y-4 text-sm text-slate-600">
             <div class="flex items-center space-x-3">
-              <span class="text-lg">📞</span>
+              <i data-lucide="phone" class="w-4 h-4 text-brand-primary"></i>
               <a href="tel:609845865" class="hover:underline font-semibold text-slate-900">609 845 865</a>
             </div>
             <div class="flex items-center space-x-3">
-              <span class="text-lg">☎️</span>
+              <i data-lucide="phone-call" class="w-4 h-4 text-brand-primary"></i>
               <a href="tel:122742306" class="hover:underline">(12) 274 23 06</a>
             </div>
             <div class="flex items-center space-x-3">
-              <span class="text-lg">✉️</span>
+              <i data-lucide="mail" class="w-4 h-4 text-brand-primary"></i>
               <a href="mailto:motobajer@eurowarsztat.pl" class="hover:underline">motobajer@eurowarsztat.pl</a>
             </div>
           </div>
@@ -506,7 +502,7 @@
             </div>
             <a href="kontakt.html" class="mt-6 text-brand-primary text-xs font-bold hover:underline flex items-center space-x-1">
               <span>Zobacz mapę dojazdu</span>
-              <span>→</span>
+              <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
             </a>
           </div>
 
@@ -520,7 +516,7 @@
             </div>
             <a href="kontakt.html" class="mt-6 text-brand-primary text-xs font-bold hover:underline flex items-center space-x-1">
               <span>Zobacz mapę dojazdu</span>
-              <span>→</span>
+              <i data-lucide="chevron-right" class="w-4 h-4 ml-1"></i>
             </a>
           </div>
 
@@ -602,6 +598,7 @@
   </footer>
 
   <!-- Scripts -->
+  <script src="https://unpkg.com/lucide@latest"></script>
   <script src="js/main.js"></script>
 </body>
 </html>
